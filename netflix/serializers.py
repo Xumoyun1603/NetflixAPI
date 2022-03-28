@@ -11,12 +11,6 @@ class ActorSerializer(serializers.ModelSerializer):
         model = Actor
         fields = ('id', 'name', 'birthdate', 'gender',)
 
-
-class MovieSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Movie
-        fields = '__all__'
-
     def validate_source(self, data):
         date1 = '1950-01-01'
         date2 = str(data['birthdate'])
@@ -28,3 +22,10 @@ class MovieSerializer(serializers.ModelSerializer):
             raise ValidationError(detail='birthdate 01.01.1950 dan katta bo\'lsin')
 
         return data
+
+
+class MovieSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Movie
+        fields = '__all__'
+
