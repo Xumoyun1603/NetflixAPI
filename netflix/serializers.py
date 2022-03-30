@@ -3,7 +3,7 @@ from datetime import datetime
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 
-from netflix.models import Movie, Actor
+from netflix.models import Movie, Actor, Comment
 
 
 class ActorSerializer(serializers.ModelSerializer):
@@ -29,3 +29,8 @@ class MovieSerializer(serializers.ModelSerializer):
         model = Movie
         fields = '__all__'
 
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = '__all__'
