@@ -105,6 +105,9 @@ class CommentAPIView(APIView):
 
 
 class CommentDetailAPIView(APIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
     def get(self, request, pk=None, pk_alt=None):
         movie = get_object_or_404(Movie, pk=pk)
         comment = get_object_or_404(movie.comments, pk=pk_alt)
