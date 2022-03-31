@@ -8,8 +8,8 @@ from .views import (
 
 
 router = DefaultRouter()
-router.register('movies', MovieViewSet)
-router.register('actors', ActorViewSet)
+router.register('movies', MovieViewSet, 'movies')
+router.register('actors', ActorViewSet, 'actors')
 
 urlpatterns = [
     path('', include(router.urls)),
