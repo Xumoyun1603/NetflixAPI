@@ -1,5 +1,6 @@
 asgiref==3.5.0
 Django==3.1.14
+django-filter==21.1
 djangorestframework==3.13.1
 environs==9.5.0
 marshmallow==3.15.0
