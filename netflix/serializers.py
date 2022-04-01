@@ -11,7 +11,7 @@ class ActorSerializer(serializers.ModelSerializer):
         model = Actor
         fields = ('id', 'name', 'birthdate', 'gender',)
 
-    def validate_source(self, data):
+    def validate(self, data):
         date1 = '1950-01-01'
         date2 = str(data['birthdate'])
 
