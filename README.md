@@ -31,9 +31,9 @@ Netflix API should be running at port **8000** on your Docker host. Go to **http
 
 Go to **http://localhost:8000/docs/** on a web browser to see the swagger docs.
 
-Go to **http://localhost:8000/redoc/** on a web browser to see the redoc docs
+Go to **http://localhost:8000/redoc/** on a web browser to see the redoc docs.
 
-Shut down services and clean up by using either of these methods: Stop the application by typing **Ctrl-C** in the same shell in where you started it
+Shut down services and clean up by using either of these methods: Stop the application by typing **Ctrl-C** in the same shell in where you started it.
 
 Or, for a more elegant shutdown, switch to a different shell, and run **docker-compose down** from the top level of your Django sample project directory.
 ```
