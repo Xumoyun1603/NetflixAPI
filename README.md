@@ -24,4 +24,11 @@ $ docker-compose up
 ```
 
 Netflix API should be running at port **8000** on your Docker host. Go to **http://localhost:8000** on a web browser to see the this page
+
 ![docker-compose (netflix)](https://user-images.githubusercontent.com/97673223/162131690-0eefbcf9-65d8-4601-9644-ee72a2900791.PNG)
+
+## The documentation of the API
+
+Go to **http://localhost:8000/docs/** on a web browser to see the swagger docs.
+
+Go to **http://localhost:8000/redoc/** on a web browser to see the redoc docs
