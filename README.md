@@ -3,7 +3,7 @@ Simple Netflix API
 
 ## How to start
 
-Clone repository and create .env file in BASE_DIR
+Clone repository and create **.env** file in **BASE_DIR**
 ```
 export SECRET_KEY=Your secret_key in settings.py
 export DEBUG=True
@@ -12,3 +12,16 @@ export POSTGRES_USER=postgres
 export POSTGRES_PASSWORD=Your postgres password
 export POSTGRES_HOST=127.0.0.1
 ```
+
+You need executable permission on the **entrypoint.sh** file.(Terminal)
+```
+$ chmod +x entrypoint.sh
+```
+
+Run the **docker-compose up** command from the top level directory for project.
+```
+$ docker-compose up
+```
+
+Netflix API should be running at port **8000** on your Docker host. Go to **http://localhost:8000** on a web browser to see the this page
+![docker-compose (netflix)](https://user-images.githubusercontent.com/97673223/162131690-0eefbcf9-65d8-4601-9644-ee72a2900791.PNG)
